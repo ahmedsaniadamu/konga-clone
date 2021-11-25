@@ -1,0 +1,38 @@
+ //reset browser default style
+@import 'reset' ;
+
+// media queries for different devices.
+@import 'responsive' ;
+
+html{
+    font-family: sans-serif;
+    font-size: 32px !important;     
+    @include mobile-view(){
+        font-size: 14px !important;
+    }
+    @include tablet-view(){
+        font-size: 25px !important;
+    }
+     
+} 
+
+#root{
+    background: rgb(236, 234, 234);
+    overflow-x: hidden;
+    & > *{
+         background: rgb(255,255,255) ;
+    }
+}
+//navbar component style
+
+@import 'navbar';
+
+//header component style
+
+@import 'header' ;
+
+//section component style
+@import 'section' ;
+
+//footer component style
+@import 'footer' ;

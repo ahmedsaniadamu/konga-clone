@@ -1,0 +1,294 @@
+// media queries for different devices.
+@import 'responsive' ;
+
+footer{
+    background: rgb(0, 0, 0) !important;
+    div.contact-info{
+        background: rgb(24, 23, 23);
+        span.icon{ 
+            font-size: 0.6rem; color: rgb(199, 195, 195);
+            @include mobile-view(){ font-size: 1.2rem; }
+        }
+       
+        &>div{
+            @include mobile-view(){ 
+                border-top: 0.5px solid rgb(95, 94, 94);
+                padding-left: 10px !important;                 
+             }
+            h5{
+                font: { size: 0.4rem ; weight : 600 };
+                color: rgba(255,255,255,0.7);
+                
+                @include mobile-view(){ font-size: 0.8rem; margin-left: 5px !important; }
+            }
+            p{ 
+                    font: { size: 0.36rem ;};
+                    color: rgba(255,255,255,0.5);
+                   
+                    @include mobile-view(){ font-size: 0.8rem; margin-left: 5px !important;}
+              }
+        }
+        div.input-group{
+
+            @include mobile-view(){
+                 width: 80%;                   
+                 margin:  {top: 10px !important; bottom: 10px !important; left: 8% !important};      
+                }
+
+            input{
+                font-size: 0.4rem;
+                border: none;
+                border-radius: 0 !important;
+                &:hover,&:active,&:focus{ box-shadow: 0 0 0 transparent !important;  border: none;}
+                &:hover{cursor: pointer;}
+
+                @include mobile-view(){ font-size: 0.9rem; }
+            }
+            span{
+                font-size: 0.4rem;
+                border: none;
+                background: rgb(209, 0, 105);
+                color: rgba(255,255,255,1);
+                letter-spacing: 0.7px;
+                border-radius: 0 !important;
+                &:hover{cursor: pointer;}
+
+                @include mobile-view(){ font-size: 0.9rem; }
+            }
+        }
+    }
+    div.footer-navigation-links{         
+        color: rgb(248, 234, 234) !important;
+
+        h5{
+            font: { size: 00.5rem ; weight: 600}; 
+            opacity: 0.8;
+        }
+
+        li{  
+                font: { size: 00.38rem ; weight:100 };
+                 color: rgb(248, 234, 234); 
+                 opacity: 0.7; transition: .2s;
+                &:hover{ cursor: pointer; opacity: 1;}
+            }
+    }
+    .store{
+         span{
+             height: 33.5px;
+             width: 94.26px;    
+             background-image: url(./store.png);
+             background-repeat: no-repeat;         
+             background-size: 250px 150px;         
+             border-radius: 5px;    
+             transition: .2s;
+             &:hover{ cursor: pointer; opacity: 0.8;}
+
+             @include tablet-view(490px , 900px){   transform: scale(0.7 , 0.7);}
+         }   
+         span.play-store{  background-position: -126px -79.7px ;  }
+         span.app-store{  background-position: -28.6px -79.7px ; width: 90px;  }
+    }
+
+    .connect-with-us{
+        h6{ font-size: 0.45rem;}
+        span{
+            font-size: 0.8rem;
+            transition: .2s;
+            margin-left: 9px;
+            &:hover{ color: rgb(209, 0, 105); cursor: pointer; }
+            @include mobile-view(){ font-size: 1rem; margin-left: 5px; }
+         }
+    }
+  
+    div.mobile-collapsed-container{
+      &>div{
+          h5.header{
+              font-size: 00.9rem;
+              color: rgb(199, 195, 195);
+              opacity:0.5 ;
+          }
+      }
+
+      #accordion{
+             & > * {
+                 background: transparent !important;
+                 color: rgba(255,255,255,0.7);
+             }
+             div.card{
+                 div.card-header{
+                     font-size: 0.8rem;  
+                     i{ opacity: 0.7;}                   
+                 }
+                 div.card-body{
+                     ul{
+                         li{
+                             font-size: 0.8rem;
+                             color: rgba(255,255,255,0.5);
+                             transition: .2s;                             
+                             &:hover{
+                                 color: rgba(255,255,255,1);
+                             }
+                         }
+                     }
+                 }
+                 div.connect-with-us{
+                     h6{ font-size: 0.8rem; margin-bottom: 10px !important;}
+                      span{ font-size: 1.2rem; margin-left: 10px !important;}
+                 }
+             }
+      }
+  }
+
+    fieldset{
+        height: 10px !important;       
+        color: rgb(199, 195, 195);     
+        opacity: 0.6;        
+          legend{
+              font-size: 0.36rem;                                      
+              font-style: oblique;
+              @include mobile-view(){font-size: 0.7rem;}
+          }
+    }
+
+    //chat component style
+    div.chat-us-container{
+       .chat-us{
+                    position: fixed;
+                    bottom: 15%;
+                    right: 10%;   
+                    z-index: 1000 !important;                                                              
+
+                    #tooltip{
+                        font-size: 0.47rem;                         
+                        width: 250px;
+                        margin: 0;
+                        padding: 0;
+                        color: rgb(0, 0, 0);
+                        height: 50px;
+                        display: block;        
+                        font-weight: 600;     
+                        background: rgb(201, 224, 253);        
+                        border-radius: 5px;                                        
+                        img{
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;     
+                            margin-left: 5px;                                                 
+                        }
+
+                }
+                div.d-flex{
+
+                    height: 55px;
+                    width: 55px;                    
+                    background:  rgb(233, 1, 117);  
+                    border-radius: 50%;                                      
+                    span{
+                        font-size: 0.8rem;
+                        color:  rgb(248, 234, 234);                       
+                    }
+                }                
+           }
+            div.chat-modal{
+                width: 310px;
+                position: fixed;
+                right: 10%;
+                z-index: 1001;
+                border-radius: 7px;
+                bottom: 5%;
+                background: rgb(235, 231, 253);
+                div.chat-modal-header{
+                    background: rgb(255, 255, 255);
+                    border-radius: 7px 7px 0 0 ;
+                    span{  
+                        font-size: 0.5rem;
+                        color: rgba(0,0,0,0.5);
+                    }                     
+                    span.welcome{
+                        font-size: 0.4rem;
+                        font-weight: 600;
+                        color: rgba(0,0,0,0.8);
+                    }
+                }
+                div.chat-modal-body{
+                    div.chat-box{
+                        span{ 
+                            font-size: 0.5rem;
+                            letter-spacing: 0.5px;
+                            font-weight: 600;
+                            i{ font-size: 0.33rem; font-weight: normal; opacity: 0.9; }
+                         }
+                         p{
+                             background: rgba(255,255,255,1);
+                             font-size: 0.4rem;                          
+                             letter-spacing: 0.7px;
+                             width: 70%;
+                             border-radius: 3px;
+                             position: relative;
+                             &::after{
+                                 content: '';
+                                border: 9px solid rgb(255, 255, 255);
+                                position: absolute;
+                                right: -0.3%;
+                                top: 96%;
+                                border-color: rgb(255, 255, 255) transparent transparent transparent;
+                             }
+
+                         }
+                    }
+                    fieldset{
+                        background: rgba(255,255,255,1);
+                        opacity: 1;
+                        transform: translateY(-15px);
+                        legend{
+                            height: 40px;
+                            width: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background: rgb(230, 10, 156);
+                            i{
+                                font-size: 0.6rem;
+                                color: rgba(255,255,255,1);
+                            }
+                        }
+                        p{
+                            font-size: 0.4rem;
+                            color:  rgb(230, 10, 156) ;                        
+                        }
+                        label {  font-size: 0.4rem;  margin-left: 5px;
+                                 color: rgba(0,0,0,0.9);                                                                  
+                                }
+                        input{
+                            font-size: 00.4rem;                            
+                            width: 90%;
+                            margin-left: auto;
+                            display: block;
+                            margin-right: auto;
+                            &:active,&:focus{
+                                border: none;
+                                outline: none;
+                                box-shadow: 0 0 0 transparent !important;
+                            }
+                        }
+                        button{
+                            font-size: 0.4rem;
+                            color: rgba(255,255,255,1);
+                            width: 200px;
+                            border: none;
+                            outline: none;
+                            background: rgb(230, 10, 156);
+                            &:active,&:focus{
+                                border: none;
+                                outline: none;
+                                box-shadow: 0 0 0 transparent !important;
+                            }
+                        }
+                    }
+                } 
+          }
+     }
+}
+
+ 

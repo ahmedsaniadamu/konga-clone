@@ -1,0 +1,244 @@
+
+// media queries for different devices.
+@import 'responsive' ;
+
+section{     
+    .header{
+        h5{
+            font-size: 0.6rem;
+            color: rgba(0,0,0,0.9);
+            @include mobile-view(){
+                font-size: 0.9rem;
+            }
+        }
+        span{
+            font-size: 0.4rem;
+            color: rgb(212, 0, 131);
+            &:hover{
+                cursor: pointer;
+            }
+            @include mobile-view(){
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .desktop-product-container{    
+        @include mobile-view(550px){
+            display: none;
+        }
+
+        & > div{
+                transition: .2s;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0.3rem 0.3rem 1rem rgb(214, 211, 252);
+                    transform: translateY(-5px);
+                }
+             img{
+                 height: 100px;
+                 width: 130px;
+                 @include tablet-view(490px, 880px){ width: 80px;  height: 70px;}
+             }
+             div{                   
+                 h5{ 
+                     font-size: 0.5rem; font-weight: 600; opacity: 0.8;
+                     @include tablet-view(490px, 880px){font-size: 0.4rem;}
+                    }
+                 p{  
+                     transform: translateY(-8px);
+                     white-space: nowrap;
+                     strong{ 
+                            font-size: 0.4rem; font-weight: 700;
+                            color: rgba(0,0,0,0.8);
+                            @include tablet-view(490px, 880px){ font-size: 0.4rem;}
+                           }
+                     del{
+                          font-size: 0.35rem; opacity: 0.8;
+                          @include tablet-view(490px, 880px){ font-size: 0.3rem;}
+                        }
+                 }
+                 span{
+                     transform: translateY(-8px);
+                     font-size: 0.38rem;
+                     color: rgb(212, 0, 131);
+                 }
+             }
+        }
+    }
+
+    .mobile-product-container{
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+
+        & > div {
+                transition: .2s;
+                &:hover{
+                    cursor: pointer;               
+                    transform: translateY(3px);
+                }
+                display: inline-block;
+                width: 265px;
+                img{
+                    width: 90px;
+                    height: 90px;
+                }
+                div{
+                    h5{ font-size: 0.78rem; text-overflow: ellipsis; overflow: hidden;}
+                    p{
+                        strong{ font: { size: 0.9rem ; weight : 600 ; }; }
+                        del{ font-size: 0.8rem;  opacity: 0.8;}                     
+                    }
+                    span{  font-size: 0.7rem; color: rgb(212, 0, 131); }
+                }
+            }
+    }
+
+    div.mobile-accessories{
+        img{
+            height: 100px;
+            border-radius: 5px;
+            @include mobile-view(){
+                height: 50px;
+            }
+            &:hover{
+                 cursor: pointer;
+            }
+        }
+    }
+    div.amazing-product{
+        img{
+            height: 170px;  
+            &:hover{  cursor: pointer }    
+
+            @include mobile-view(500px){
+                height: 90px;
+            }
+        }
+    }
+    div.best-selling-product{
+        h5.header{
+            background: rgb(224, 4, 107);
+            color: rgb(255, 255, 255);
+            font :  { weight:600 ; size :0.6rem};
+            
+            @include mobile-view(){  font :  { size :1rem   };  }
+        }
+        div.products{
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            overflow-x: scroll;
+            &:hover{ cursor: pointer;}
+            img{
+                  width: 200px;
+                  height: 200px;
+                  @include mobile-view(){  width: 120px; height: 120px; margin-left: 0.7rem !important; }
+                  @include tablet-view(){  width: 150px; height: 150px; margin-left: 0.45rem !important; }
+            }
+        }
+
+        div.special-products{
+             white-space: nowrap;
+             overflow: hidden;          
+             // scrollable in both mobile and tablet device from 0px to 900px  wide.
+             @include tablet-view(0px , 1100px ){
+                 overflow-x: scroll;
+             }
+
+             div.item{                  
+                  width: 280px;
+                  height: 330px;
+                  transition: .2s;                  
+                  &:hover{ cursor: pointer; transform: translateY(-5px);}
+                 
+                  @include mobile-view(500px){
+                       height: 220px;
+                       width: 180px;
+                   }
+
+                   @include tablet-view(451px,800px){ 
+                        width: 230px; 
+                        height: 280px;
+                    }
+                  img{
+                      height: 200px;
+                    
+                       @include mobile-view(500px){ height: 120px; }
+                       @include tablet-view(451px,800px){ height: 150px;}
+                  }
+                  h5{  
+                      font-size: 0.5rem;
+                      color: rgba(0,0,0,0.6);
+                      font-weight: 900;
+                      @include mobile-view(500px){
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                       }
+                       @include tablet-view(451px,800px){ font-size: 0.4rem;}
+                   }
+                   p{
+                       font-size: 0.4rem;                       
+                       font-weight: 600;
+                       color: rgba(0,0,0,0.7);
+                       white-space: pre-line;
+                        height: 40px;
+                       @include mobile-view(500px){
+                        font-size: 0.7rem;
+                        font-weight: normal;
+                       }
+                   }
+                   button{
+                       font-size: 0.4rem;
+                       font-weight: 600;
+                       color: rgb(212, 0, 99);
+                       border: none !important;
+                       outline: none !important; 
+                       background-color: transparent;
+                       
+                       @include mobile-view(){
+                        font-size: 0.8rem;
+                        font-weight: normal;
+                       }
+          
+                       &:active,&:focus,&:hover{                            
+                           border: none !important;
+                           outline: none !important;                            
+                       }
+                   }
+            }
+        }
+        div.our-partners{
+             img{ 
+                 height: 90px;
+                 &:hover{ cursor: pointer; }
+
+                 @include mobile-view(){ height: 40px; }
+                 @include tablet-view(){ height: 70px; }
+                }
+        }
+       div.about-us{
+            background: rgb(241, 240, 240);             
+            & > *{
+                background: rgb(255,255,255) ;
+            }
+
+           h5{
+               font-size: 0.7rem;
+               font-weight: 700;
+                opacity: 0.8;
+               @include mobile-view(){ font-weight: 600;  font-size: 0.8rem ;}
+               @include tablet-view(){ font-size: 0.7rem; }
+           }
+           
+           p{
+               font-size: 0.45rem;
+               
+               @include mobile-view(){ font-size: 0.6rem; }
+               @include tablet-view(){ font-size: 0.4rem; }
+           }
+       }
+    }
+     
+}

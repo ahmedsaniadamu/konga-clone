@@ -1,0 +1,75 @@
+// media queries for different devices.
+@import 'responsive' ;
+
+header{
+    .banner{                         
+        div.carousel{            
+            .carousel-indicators{
+                 span{
+                      background-color: rgb(0, 0, 0);
+                      opacity: 1;
+                      border-radius: 50%;
+                 } 
+                 span.active{
+                     background-color: rgb(255, 255, 255);
+                 }
+            }
+            .carousel-inner{                
+                img{
+                    height: 350px !important;                   
+                    object-fit: fill;
+                    @include mobile-view(){
+                        height: 250px !important;
+                    }
+                }
+           } 
+           .carousel-control-prev,.carousel-control-next{    
+               opacity: 1;                                          
+               span{
+                font-size: 0.5rem  !important;
+                background-color: rgb(255, 255, 255);
+                opacity: 1 !important;
+                border-radius: 50%;
+                color : rgba(0,0,0,0.5) ;
+               }
+           }       
+        }
+    }
+    .small-images{
+        & > div {                                          
+            img{
+                width: 90%;
+                height: 90%;
+                display: block;
+                margin: auto;                
+                @include mobile-view(){
+                    margin-top: 10%;
+                }
+                @include tablet-view(500px,860px){
+                     height: 95%;
+                }
+            }
+        }
+    }
+    div.navigations{
+         background: rgb(255, 255, 255);
+        img.nav-images{
+            height: 40px;
+            width: 150px;
+            padding: 7px;
+            object-fit: fill;
+            transition: border-color 0.5s;
+            @include tablet-view(600px , 980px){
+                width: 100px;
+                height: 30px;
+                padding: 3px;
+            }
+            &:hover{
+               border-color: rgb(250, 58, 176) !important;
+               cursor: pointer;
+            }
+        }
+    }
+}
+ 
+  

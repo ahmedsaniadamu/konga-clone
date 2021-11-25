@@ -1,0 +1,515 @@
+/* reset defaul browser styles */
+html {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+* {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /* hide side scroll bar icon from the page and keep functionality */
+  /* for internet explorer edge and firefox */
+  -ms-overflow-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+/* hide side scroll bar icon in the page and keep functionality */
+/* for chrome , opera and safari */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 32px !important;
+  background: #f0f0f0;
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 461px) and (max-width: 770px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+nav img.top-image {
+  height: 60px;
+}
+
+@media screen and (max-width: 460px) {
+  nav img.top-image {
+    height: 40px;
+  }
+}
+
+nav div.desktop-navbar div.navigations img {
+  width: 100px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+nav div.desktop-navbar div.navigations img:hover {
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main {
+  background: #e70f74;
+}
+
+nav div.desktop-navbar div.navbar-main .navbar-link {
+  color: white;
+  font-size: 0.38rem !important;
+  font-weight: 100;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav div.desktop-navbar div.navbar-main .navbar-link:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cccaca), color-stop(white), color-stop(white), to(#cccaca));
+  background: linear-gradient(180deg, #cccaca, white, white, #cccaca);
+  color: #e4227c !important;
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main .navbar-link sup {
+  -webkit-animation: transform 2s infinite;
+          animation: transform 2s infinite;
+}
+
+@-webkit-keyframes transform {
+  from {
+    color: white;
+  }
+  to {
+    color: #f885bb;
+  }
+}
+
+@keyframes transform {
+  from {
+    color: white;
+  }
+  to {
+    color: #f885bb;
+  }
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group {
+  width: 400px;
+  padding: 0;
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group input[type="search"], nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.signup div.signup-form button[type="search"], nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form div.input-group button[type="search"], nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.login fieldset button[type="search"], nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset div.input-group button[type="search"], nav div.desktop-navbar div.navbar-main div.input-group .form-container .fixed-login-form .login fieldset button[type="search"], nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main div.input-group button[type="search"] {
+  font-size: 0.35rem;
+  padding: 0;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group input[type="search"]:focus, nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.signup div.signup-form button[type="search"]:focus, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form div.input-group button[type="search"]:focus, nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.login fieldset button[type="search"]:focus, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset div.input-group button[type="search"]:focus, nav div.desktop-navbar div.navbar-main div.input-group .form-container .fixed-login-form .login fieldset button[type="search"]:focus, nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main div.input-group button[type="search"]:focus {
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group input[type="search"]:hover, nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.signup div.signup-form button[type="search"]:hover, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form div.input-group button[type="search"]:hover, nav div.desktop-navbar div.navbar-main div.input-group .dropdown div.login fieldset button[type="search"]:hover, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset div.input-group button[type="search"]:hover, nav div.desktop-navbar div.navbar-main div.input-group .form-container .fixed-login-form .login fieldset button[type="search"]:hover, nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main div.input-group button[type="search"]:hover {
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group .input-group-text {
+  font-size: 0.33rem;
+  border-radius: 0 !important;
+  color: white;
+  background: #faa60a;
+  border: 0 !important;
+}
+
+nav div.desktop-navbar div.navbar-main div.input-group .input-group-text:hover {
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown .help .exclamation {
+  background: #fa4399;
+  font-size: 0.25rem;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown .dropdown-menu {
+  border: none !important;
+  width: 200px !important;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown .dropdown-menu li {
+  border: none !important;
+  font-size: 0.4rem;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown .dropdown-menu li:hover {
+  background: #e70f74;
+  color: white;
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup {
+  width: 300px !important;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form {
+  width: 90%;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form label {
+  font-size: 0.4rem;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form input.input-style, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button.input-style {
+  font-size: 0.35rem;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form input.input-style:focus, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button.input-style:focus {
+  -webkit-box-shadow: 1px 1px 1px #e70f74;
+          box-shadow: 1px 1px 1px #e70f74;
+  border-color: #e70f74;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form input.input-style:hover, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button.input-style:hover {
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button {
+  font-size: 0.4rem;
+  letter-spacing: 0.5px;
+  border: none;
+  background: #e70f74;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login {
+  width: 86%;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset {
+  width: 100%;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset legend {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  background: #e70f74;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset input, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset div.signup div.signup-form button, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form div.login fieldset button, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset button {
+  font-size: 0.35rem;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset input:focus, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset button:focus {
+  -webkit-box-shadow: 1px 1px 1px #e70f74;
+          box-shadow: 1px 1px 1px #e70f74;
+  border-color: #e70f74;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset input:hover, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset button:hover {
+  cursor: pointer;
+}
+
+nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset button {
+  font-size: 0.4rem;
+  letter-spacing: 0.5px;
+  border: none;
+  background: #e70f74;
+}
+
+nav div.desktop-navbar div.navigations-container {
+  background: #9e004a;
+}
+
+nav div.desktop-navbar div.navigations-container > div {
+  font-size: 0.35rem;
+  color: white;
+  font-weight: 400;
+}
+
+nav div.desktop-navbar div.navigations-container > div:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cccaca), color-stop(white), color-stop(white), to(#cccaca));
+  background: linear-gradient(180deg, #cccaca, white, white, #cccaca);
+  color: #e4227c !important;
+  cursor: pointer;
+}
+
+nav div.mobile-navbar div.row span.fas, nav div.mobile-navbar div.row span.fab {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav .form-container .login-and-signup button {
+  border-color: #e70f74;
+  color: #e70f74;
+  width: 150px;
+}
+
+nav .form-container .login-and-signup button:active {
+  background: #e70f74;
+  color: white;
+  -webkit-box-shadow: 0 0 0 #e4227c;
+          box-shadow: 0 0 0 #e4227c;
+}
+
+nav .form-container .login-and-signup button:hover {
+  background: transparent;
+  color: #e70f74;
+}
+
+nav .form-container .fixed-login-form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav .form-container .fixed-login-form .header {
+  font-size: 1.1rem;
+}
+
+nav .form-container .fixed-login-form .header:hover {
+  color: #e70f74;
+}
+
+nav .form-container .fixed-login-form .login {
+  width: 90%;
+}
+
+@media screen and (min-width: 461px) and (max-width: 770px) {
+  nav .form-container .fixed-login-form .login {
+    width: 50%;
+  }
+}
+
+nav .form-container .fixed-login-form .login fieldset {
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding-top: 1.3rem !important;
+  padding-bottom: 1.3rem !important;
+  border: 0.5px solid #dad7d8 !important;
+}
+
+nav .form-container .fixed-login-form .login fieldset legend {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  background: #e70f74;
+}
+
+nav .form-container .fixed-login-form .login fieldset input, nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form .form-container .fixed-login-form .login fieldset button, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.login fieldset button, nav div.desktop-navbar div.navbar-main .dropdown .form-container .fixed-login-form div.login fieldset button, nav .form-container .fixed-login-form .login fieldset button {
+  margin-top: 1.2rem !important;
+  font-size: 0.9rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+nav .form-container .fixed-login-form .login fieldset input:focus, nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button:focus, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form .form-container .fixed-login-form .login fieldset button:focus, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.login fieldset button:focus, nav div.desktop-navbar div.navbar-main .dropdown .form-container .fixed-login-form div.login fieldset button:focus, nav .form-container .fixed-login-form .login fieldset button:focus {
+  -webkit-box-shadow: 1px 1px 1px #e70f74;
+          box-shadow: 1px 1px 1px #e70f74;
+  border-color: #e70f74;
+}
+
+nav .form-container .fixed-login-form .login fieldset input:hover, nav .form-container .fixed-login-form .login fieldset div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button:hover, nav div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form .form-container .fixed-login-form .login fieldset button:hover, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.login fieldset button:hover, nav div.desktop-navbar div.navbar-main .dropdown .form-container .fixed-login-form div.login fieldset button:hover, nav .form-container .fixed-login-form .login fieldset button:hover {
+  cursor: pointer;
+}
+
+nav .form-container .fixed-login-form .login fieldset button {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border: none;
+  background: #e70f74;
+  margin-top: 2.2rem !important;
+}
+
+nav .form-container .fixed-login-form .signup-form {
+  background: white;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 461px) and (max-width: 770px) {
+  nav .form-container .fixed-login-form .signup-form {
+    width: 60%;
+  }
+}
+
+nav .form-container .fixed-login-form .signup-form label {
+  font-size: 1rem;
+  margin-top: 1rem !important;
+}
+
+nav .form-container .fixed-login-form .signup-form input, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button, nav div.desktop-navbar div.navbar-main .dropdown div.signup .form-container .fixed-login-form div.signup-form button, nav .form-container .fixed-login-form .signup-form div.desktop-navbar div.navbar-main .dropdown div.login fieldset button, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset .form-container .fixed-login-form .signup-form button, nav .form-container .fixed-login-form .signup-form .login fieldset button, nav .form-container .fixed-login-form .login fieldset .signup-form button {
+  font-size: 0.9rem;
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+}
+
+nav .form-container .fixed-login-form .signup-form input:focus, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button:focus, nav div.desktop-navbar div.navbar-main .dropdown div.signup .form-container .fixed-login-form div.signup-form button:focus, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset .form-container .fixed-login-form .signup-form button:focus, nav .form-container .fixed-login-form .signup-form .login fieldset button:focus, nav .form-container .fixed-login-form .login fieldset .signup-form button:focus {
+  -webkit-box-shadow: 1px 1px 1px #e70f74;
+          box-shadow: 1px 1px 1px #e70f74;
+  border-color: #e70f74;
+}
+
+nav .form-container .fixed-login-form .signup-form input:hover, nav .form-container .fixed-login-form div.desktop-navbar div.navbar-main .dropdown div.signup div.signup-form button:hover, nav div.desktop-navbar div.navbar-main .dropdown div.signup .form-container .fixed-login-form div.signup-form button:hover, nav div.desktop-navbar div.navbar-main .dropdown div.login fieldset .form-container .fixed-login-form .signup-form button:hover, nav .form-container .fixed-login-form .signup-form .login fieldset button:hover, nav .form-container .fixed-login-form .login fieldset .signup-form button:hover {
+  cursor: pointer;
+}
+
+nav .form-container .fixed-login-form .signup-form button {
+  margin-top: 2rem !important;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: none;
+  background: #e70f74;
+}
+
+nav .form-container .fixed-login-form .signup-form button:focus {
+  -webkit-box-shadow: 1px 1px 1px #e70f74;
+          box-shadow: 1px 1px 1px #e70f74;
+  border-color: #e70f74;
+}
+
+nav .form-container .fixed-login-form .signup-form button:hover {
+  cursor: pointer;
+}
+
+nav .button-groups div.col-6 .icon {
+  color: rgba(41, 22, 22, 0.5) !important;
+  font-size: 1.3rem !important;
+}
+
+nav .button-groups div.col-6 div h5 {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+nav .button-groups div.col-6 div p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav .categories-container {
+  background: #f0f0f0;
+}
+
+nav .categories-container h1 {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.8);
+  background: white;
+  font-weight: 600;
+}
+
+nav .categories-container ul {
+  background: white;
+}
+
+nav .categories-container ul li {
+  border-left: none;
+  border-right: none;
+  border-radius: 0 !important;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav .categories-container ul li:hover {
+  cursor: pointer;
+  color: #fa4399;
+}
+
+nav .categories-container ul li i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+nav .categories-container p {
+  color: rgba(0, 0, 0, 0.9);
+  background: white;
+}
+
+nav .categories-container p i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+header .banner div.carousel .carousel-indicators span {
+  background-color: black;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+header .banner div.carousel .carousel-indicators span.active {
+  background-color: white;
+}
+
+header .banner div.carousel .carousel-inner img {
+  height: 350px !important;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media screen and (max-width: 460px) {
+  header .banner div.carousel .carousel-inner img {
+    height: 300px !important;
+  }
+}
+
+header .banner div.carousel .carousel-control-prev span {
+  font-size: 0.5rem  !important;
+  background-color: white;
+  opacity: 1;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=index.css.map */

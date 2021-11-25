@@ -1,0 +1,17 @@
+// media query for device responsive with different breakpoint ( mobile , tablet )..
+
+// for mobile devices
+
+@mixin mobile-view($max:460px) {
+    @media screen and (max-width : $max ){
+        @content
+    }
+}
+
+// for tablet devices..
+
+@mixin tablet-view($min: 461px, $max: 770px) {
+    @media screen and (min-width: $min) and (max-width:$max ){
+        @content
+    }
+}
